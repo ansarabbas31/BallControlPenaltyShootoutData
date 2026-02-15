@@ -20,12 +20,12 @@ platform :ios do
     deliver(
       app_identifier: APP_IDENTIFIER,
       skip_binary_upload: true,
-      skip_metadata: false,
+      skip_metadata: true,
       force: true,
       metadata_path: "./fastlane/metadata",
       skip_screenshots: false,
       overwrite_screenshots: true,
-	  screenshots_path: "./fastlane/screenshots",
+	  screenshots_path: "./fastlane/screenshots_temp",
       api_key_path: API_KEY_PATH
     )
   end
